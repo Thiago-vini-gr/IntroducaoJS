@@ -1,0 +1,42 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saída JavaScript</title>
+</head>
+<body>
+    <h1>Saída JavaScript</h1>
+    <P>Usando o <code>innerHTML</code>:</P>
+    <p id="demo1"></p>
+    <script>
+        document.getElementById("demo1").innerHTML = 5 + 6;
+    </script>
+    <p> Usando o <code>document.write</code>:</p>
+    <script>
+        document.write(5 + 6);
+    </script>
+    <p>
+        <strong>Usar <code>document.write()</code>após o carregamento de um documento HTML excluirá todo o HTML existente!</strong>
+    </p>
+    <button type="button" onclick="document.write(5 + 6)">
+                       TESTE!
+    </button>
+    <P> O método document.write() só deve ser usado para teste.</P>
+    <p>Usando o <code>window.alert</code></p>
+    <script>
+        window.alert(5 + 6);
+    </script>
+    <p> Você pode pular a palavra-chave<code>window</code>.</p>
+    <p>Em JavaScript, o objeto <code>window</code> é o objeto de escopo global.
+    Isso significa que variáveis, propriedades e métodos, por padrão, pertecem ao objeto <code>Window</code>.
+     Isso também significa que especificar a palavra-chave <code>window</code> é opcional.</p>
+     <script>
+        alert(5 + 6);
+     </script>
+     <p>Usando o <code>console.log()</code> para fins de depuração (aparte F12 no teclado).</p>
+    <script>
+        console.log(5 + 6);
+    </script>
+</body>
+</html>
